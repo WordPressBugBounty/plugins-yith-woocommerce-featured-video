@@ -5,7 +5,7 @@ Tags: woocommerce, featured video, featured image, featured, product, e-commerce
 Requires PHP: 7.4
 Requires at least: 6.5
 Tested up to: 6.7
-Stable tag: 1.41.0
+Stable tag: 1.42.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -77,11 +77,14 @@ You can report security bugs through the Patchstack Vulnerability Disclosure Pro
 
 == Changelog ==
 
+= 1.42.0 - Released on 18 December 2024 =
+* New: Support for WooCommerce 9.5
+* Update: YITH plugin framework
+
 = 1.41.0 - Released on 05 November 2024 =
 * New: Support for WooCommerce 9.4
 * New: Support for WordPress 6.7
 * Update: YITH plugin framework
-
 
 = 1.40.0 - Released on 17 September 2024 =
 * New: Support for WooCommerce 9.3
