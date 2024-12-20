@@ -30,8 +30,6 @@ if ( ! class_exists( 'YITH_WC_Audio_Video' ) ) {
 		 */
 		public function __construct() {
 
-			// Load Plugin Framework.
-			add_action( 'plugins_loaded', array( $this, 'plugin_fw_loader' ), 15 );
 			add_action( 'wp_enqueue_scripts', array( $this, 'include_video_scripts' ), 20 );
 
 			if ( is_admin() ) {
@@ -63,20 +61,6 @@ if ( ! class_exists( 'YITH_WC_Audio_Video' ) ) {
 			return self::$_instance;
 		}
 
-		/**
-		 * Load the plugin framework
-		 *
-		 * @since 1.0.0
-		 */
-		public function plugin_fw_loader() {
-			if ( ! defined( 'YIT_CORE_PLUGIN' ) ) {
-				global $plugin_fw_data;
-				if ( ! empty( $plugin_fw_data ) ) {
-					$plugin_fw_file = array_shift( $plugin_fw_data );
-					require_once $plugin_fw_file;
-				}
-			}
-		}
 		/**
 		 * Include style and script
 		 *

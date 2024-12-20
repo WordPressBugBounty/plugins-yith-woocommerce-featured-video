@@ -3,7 +3,7 @@
  * Plugin Name: YITH WooCommerce Featured Video
  * Plugin URI: https://yithemes.com/themes/plugins/yith-woocommerce-featured-audio-video-content/
  * Description: <code><strong>YITH WooCommerce Featured Video</strong></code> allows you to set a video or audio instead of the featured image on the single product page. <a href ="https://yithemes.com">Get more plugins for your e-commerce shop on <strong>YITH</strong></a>
- * Version: 1.42.0
+ * Version: 1.42.1
  * Author: YITH
  * Author URI: https://yithemes.com/
  * Text Domain: yith-woocommerce-featured-video
@@ -13,7 +13,7 @@
  *
  * @author YITH <plugins@yithemes.com>
  * @package YITH WooCommerce Featured Audio Video Content
- * @version 1.42.0
+ * @version 1.42.1
  */
 
 /*
@@ -68,7 +68,7 @@ function yith_ywcfav_install_free_admin_notice() {
 }
 
 if ( ! defined( 'YWCFAV_VERSION' ) ) {
-	define( 'YWCFAV_VERSION', '1.42.0' );
+	define( 'YWCFAV_VERSION', '1.42.1' );
 }
 
 if ( ! defined( 'YWCFAV_FREE_INIT' ) ) {
@@ -109,12 +109,10 @@ if ( ! function_exists( 'yith_plugin_registration_hook' ) ) {
 }
 register_activation_hook( __FILE__, 'yith_plugin_registration_hook' );
 
-/* Plugin Framework Version Check */
-if ( ! function_exists( 'yit_maybe_plugin_fw_loader' ) && file_exists( YWCFAV_DIR . 'plugin-fw/init.php' ) ) {
-	require_once YWCFAV_DIR . 'plugin-fw/init.php';
+// Plugin Framework Loader.
+if ( file_exists( plugin_dir_path( __FILE__ ) . 'plugin-fw/init.php' ) ) {
+	require_once plugin_dir_path( __FILE__ ) . 'plugin-fw/init.php';
 }
-
-yit_maybe_plugin_fw_loader( YWCFAV_DIR );
 
 if ( ! function_exists( 'YITH_Featured_Audio_Video_Init' ) ) {
 
@@ -124,8 +122,10 @@ if ( ! function_exists( 'YITH_Featured_Audio_Video_Init' ) ) {
 	 * @since 1.1.4
 	 */
 	function YITH_Featured_Audio_Video_Init() { // phpcs:ignore WordPress.NamingConventions.ValidFunctionName
-		load_plugin_textdomain( 'yith-woocommerce-featured-video', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 
+		if ( function_exists( 'yith_plugin_fw_load_plugin_textdomain' ) ) {
+			yith_plugin_fw_load_plugin_textdomain( 'yith-woocommerce-featured-video', basename( dirname( __FILE__ ) ) . '/languages' );
+		}
 		require_once YWCFAV_INC . 'functions.yith-wc-featured-audio-video.php';
 		require_once YWCFAV_INC . 'classes/class.ywcfav-manager.php';
 		require_once YWCFAV_INC . 'classes/class.ywcfav-admin.php';
