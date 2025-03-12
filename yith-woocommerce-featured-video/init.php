@@ -3,17 +3,17 @@
  * Plugin Name: YITH WooCommerce Featured Video
  * Plugin URI: https://yithemes.com/themes/plugins/yith-woocommerce-featured-audio-video-content/
  * Description: <code><strong>YITH WooCommerce Featured Video</strong></code> allows you to set a video or audio instead of the featured image on the single product page. <a href ="https://yithemes.com">Get more plugins for your e-commerce shop on <strong>YITH</strong></a>
- * Version: 1.44.0
+ * Version: 1.45.0
  * Author: YITH
  * Author URI: https://yithemes.com/
  * Text Domain: yith-woocommerce-featured-video
  * Domain Path: /languages/
- * WC requires at least: 9.5
- * WC tested up to: 9.7
+ * WC requires at least: 9.6
+ * WC tested up to: 9.8
  *
  * @author YITH <plugins@yithemes.com>
  * @package YITH WooCommerce Featured Audio Video Content
- * @version 1.44.0
+ * @version 1.45.0
  */
 
 /*
