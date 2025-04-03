@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the YITH WooCommerce Featured Video package.
 msgid ""
 msgstr ""
-"Project-Id-Version: YITH WooCommerce Featured Video 1.45.0\n"
+"Project-Id-Version: YITH WooCommerce Featured Video 1.46.0\n"
 "Report-Msgid-Bugs-To: YITH <plugins@yithemes.com>\n"
-"POT-Creation-Date: 2025-03-12 12:17:54+00:00\n"
+"POT-Creation-Date: 2025-04-03 18:09:08+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
