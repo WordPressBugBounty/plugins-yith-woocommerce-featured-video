@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the YITH WooCommerce Featured Video package.
 msgid ""
 msgstr ""
-"Project-Id-Version: YITH WooCommerce Featured Video 1.46.0\n"
+"Project-Id-Version: YITH WooCommerce Featured Video 1.47.0\n"
 "Report-Msgid-Bugs-To: YITH <plugins@yithemes.com>\n"
-"POT-Creation-Date: 2025-04-03 18:09:08+00:00\n"
+"POT-Creation-Date: 2025-06-09 09:58:41+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -46,13 +46,13 @@ msgid ""
 "in the product detail page. (the services enabled are: YouTube and Vimeo )."
 msgstr ""
 
-#: init.php:52
+#: init.php:53
 msgid ""
 "YITH WooCommerce Featured Video is enabled but not effective. It requires "
 "WooCommerce in order to work."
 msgstr ""
 
-#: init.php:65
+#: init.php:66
 msgid ""
 "You can't activate the free version of YITH WooCommerce Featured Video "
 "while you are using the premium one."

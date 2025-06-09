@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YITH WooCommerce Featured Video\n"
 "Report-Msgid-Bugs-To: YITH <plugins@yithemes.com>\n"
-"POT-Creation-Date: 2024-01-30 13:00:49+00:00\n"
+"POT-Creation-Date: 2025-06-09 09:58:41+00:00\n"
 "PO-Revision-Date: 2018-10-23 15:38+0200\n"
 "Last-Translator: \n"
 "Language-Team: Yithemes <plugins@yithemes.com>\n"
@@ -45,7 +45,7 @@ msgstr ""
 "evidenza nella pagina dettaglio del prodotto (i servizi disponibili sono: "
 "%s)."
 
-#: init.php:52
+#: init.php:53
 msgid ""
 "YITH WooCommerce Featured Video is enabled but not effective. It requires "
 "WooCommerce in order to work."
@@ -53,7 +53,7 @@ msgstr ""
 "YITH WooCommerce Featured Video è abilitato ma non in funzione. Devi "
 "installare WooCommerce affinché questo possa funzionare."
 
-#: init.php:65
+#: init.php:66
 msgid ""
 "You can't activate the free version of YITH WooCommerce Featured Video while "
 "you are using the premium one."
